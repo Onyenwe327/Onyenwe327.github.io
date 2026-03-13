@@ -121,8 +121,13 @@ To understand coordination, we analyzed:
 - Dynamic Time Warping (DTW)
 - Occupancy entropy
 
-{% include figure.liquid path="assets/img/aim4/angle_phase_plot.gif" title="Angle–angle trajectories over final 5 seconds" class="img-fluid rounded z-depth-1" %}
-
+<div class="text-center">
+  <img src="/assets/img/aim4/angle_phase_plot.gif"
+       alt="Angle–angle trajectories over final 5 seconds"
+       class="img-fluid rounded"
+       style="max-width: 900px;">
+  <p class="caption">Angle–angle trajectories over final 5 seconds</p>
+</div>
 ### Observations
 
 Low stiffness:
