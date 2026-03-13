@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - Onyenwe327
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - Onyenwe327/rl_design_mjlab
+  - rominamir/Dynamic-tendon-Leg
+  - junchaoma423/rl_robotic_design
+  - junchaoma423/isaac_lab_projects
