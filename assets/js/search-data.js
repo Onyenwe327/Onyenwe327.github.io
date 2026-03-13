@@ -409,12 +409,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-game-ai-street-fighter-ii",
-          title: 'Game AI — Street Fighter II',
-          description: "PPO and Recurrent PPO agents for complex fighting game control",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_street_fighter/";
-            },},{id: "projects-parallelization-of-q-learning-amp-dqn",
+          section: "News",},{id: "projects-parallelization-of-q-learning-amp-dqn",
           title: 'Parallelization of Q-Learning &amp;amp; DQN',
           description: "Synchronization strategies and asynchronous environment parallelization for reinforcement learning",
           section: "Projects",handler: () => {
