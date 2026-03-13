@@ -3,7 +3,8 @@ cv:
   label: Reinforcement Learning Researcher
   email: jiajinz@usc.edu
   location: Los Angeles, CA
-  summary: Reinforcement learning researcher working on robotic locomotion and morphology–control co-optimization.
+  image: ""
+  summary: Reinforcement learning researcher working on robotic locomotion, morphology-control co-optimization, and scalable training systems
 
   social_networks:
     - network: GitHub
@@ -11,91 +12,127 @@ cv:
     - network: LinkedIn
       username: jiajinzhang
 
-  sections:
+  address:
+    street: ""
+    city: Los Angeles
+    region: California
+    postalCode: ""
+    countryCode: US
 
-    education:
+  sections:
+    Education:
       - institution: University of Southern California
         location: Los Angeles, CA
+        url: https://www.usc.edu/
         area: Computer Engineering
-        study_type: Master of Science
-        start_date: 2024-01
-        end_date: 2025-12
+        studyType: Master of Science
+        start_date: 2024-08
+        end_date: 2025-05
+        score: ""
+        courses: "Machine Learning I; Parallel and Distributed Computation; Probability for ECE"
         highlights:
-          - Machine Learning I
-          - Parallel and Distributed Computation
-          - Probability for ECE
+          - Coursework in machine learning and distributed systems.
 
       - institution: University of Macau
         location: Macau, China
+        url: https://www.um.edu.mo/
         area: Computer Science
-        study_type: Bachelor of Science
-        start_date: 2019-08
+        studyType: Bachelor of Science
+        start_date: 2019-09
         end_date: 2023-06
         highlights:
           - Outstanding Graduate Student
-          - Best Final Year Project
+          - Best Final Year Project (Reinforcement Learning in Games)
 
-    experience:
+    Experience:
       - company: Dynamic Robotics and Control Laboratory (DRCL), USC
         position: Research Assistant
         location: Los Angeles, CA
         start_date: 2025-09
         end_date: null
+        summary: Research on reinforcement learning for robotic control and morphology co-design under Dr. Nguyen.
         highlights:
-          - Designed nested optimization for morphology–controller co-design.
+          - Designed nested optimization for morphology-controller co-design.
           - Automated MuJoCo parametric morphology generation.
-          - Built co-evolution pipeline for controller–mechanics optimization.
+          - Built co-evolution pipeline for controller and mechanics.
 
       - company: Valero Lab, USC
         position: Research Assistant Intern
         location: Los Angeles, CA
         start_date: 2024-08
-        end_date: 2025-08
+        end_date: 2025-05
+        summary: Intern work on tendon elasticity and RL experiments.
         highlights:
-          - Studied tendon elasticity effects on RL performance.
           - Conducted large-scale PPO experiments.
+          - Implemented MuJoCo evaluation pipelines.
 
       - company: Boardware Software Inc.
         position: Software Engineer Intern
         location: Macau, China
         start_date: 2022-06
         end_date: 2022-08
+        summary: Software engineering internship.
 
-    publications:
+    Volunteer:
+      - company: People's Climate March
+        position: Lead Organizer
+        location: Zurich, Switzerland
+        start_date: 2014-04-01
+        end_date: 2015-07-01
+        summary: Lead organizer for the New York City branch of the People's Climate March.
+        highlights:
+          - Awarded 'Climate Hero' award by Greenpeace.
+
+    Awards:
+      - title: Best Final Year Project
+        authors:
+          - University of Macau
+        date: 2023-06-01
+        awarder: University of Macau
+        summary: Top project award for undergraduate thesis on reinforcement learning in games.
+
+    Publications:
       - title: Learning and Performance Trade-offs Across Tendon Stiffness Levels in a Simulated Robotic Limb
+        authors:
+          - Jiajin Zhang
         publisher: Society for Neuroscience
-        release_date: 2025
+        releaseDate: 2025-08-01
+        url: ""
+        summary: Submitted abstract on tendon stiffness and learning tradeoffs.
 
       - title: Learning Locomotion Under Frustrated Constraints
+        authors:
+          - Jiajin Zhang
         publisher: Salk Motor Systems Symposium
-        release_date: 2025
+        releaseDate: 2025-07-01
+        url: ""
+        summary: Submitted abstract.
 
-    projects:
+    Projects:
       - name: Street Fighter RL Agent
-        summary: PPO and LSTM-PPO agents achieving 96% win rate.
+        start_date: 2022-01-01
+        end_date: 2023-06-01
+        summary: PPO and LSTM-PPO agents achieving 96% win rate in Gym Retro.
 
       - name: Parallelized Q-Learning and DQN
-        summary: 3× training speedup via parallel sampling.
+        start_date: 2023-09-01
+        end_date: 2024-01-01
+        summary: 3x training speedup via parallel sampling and optimized replay buffers.
 
-    skills:
+    Skills:
       - name: Programming
         keywords: Python, C++, CUDA
-
       - name: ML / RL
-        keywords: PyTorch, PPO, DQN, Stable-Baselines3
-
+        keywords: PyTorch, Stable-Baselines3, PPO, DQN
       - name: Simulation
         keywords: MuJoCo, Gymnasium, IsaacLab
-
       - name: Systems
         keywords: Linux, Docker, SLURM, Git
 
-    languages:
+    Languages:
       - name: English
-        level: Fluent
-
+        summary: Fluent
       - name: Mandarin
-        level: Native
-
+        summary: Native
       - name: Cantonese
-        level: Basic
+        summary: Basic
