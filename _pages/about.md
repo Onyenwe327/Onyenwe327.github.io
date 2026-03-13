@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>+1 213-653-9847</p>
+    <p>Made in China & Located in USA</p>
     <p>Los Angeles, CA, 90007</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
