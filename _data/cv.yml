@@ -94,7 +94,7 @@ cv:
         url: https://www.salk.edu/
         summary: Presented findings on adaptive stiffness schedules and their impact on robotic locomotion learning dynamics.
 
-    Selected Projects:
+    Projects:
       - name: Street Fighter II RL Agent
         start_date: 2022-08-01
         end_date: 2023-05-01
