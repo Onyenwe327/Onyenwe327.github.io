@@ -1,148 +1,88 @@
----
-layout: page
-title: Game AI — Street Fighter II
-description: PPO and Recurrent PPO agents for complex fighting game control
-img: assets/img/maxresdefault.jpg
-importance: 1
-category: research
-related_publications: false
----
+This project builds a competitive deep RL agent for Street Fighter II using PPO and Recurrent PPO.
 
-This project investigates how reinforcement learning can master a complex,
-partially observable fighting game environment — **Street Fighter II** —
-using Proximal Policy Optimization (PPO) and Recurrent PPO (LSTM-based).
-
-Unlike simple arcade environments, Street Fighter presents:
-
-- High-dimensional pixel observations  
-- Long-horizon credit assignment  
-- Sparse win/loss rewards  
-- Delayed effects of combos and defensive strategies  
-
-The objective was to design a stable training pipeline capable of achieving competitive performance against built-in AI opponents.
+**Role:** RL Developer  
+**Foundation:** Extended and refactored an existing Gym Retro implementation  
+**Final Result:** 96% win rate vs built-in AI  
 
 ---
 
-# Environment & Engineering Design
+# System Engineering Modifications
 
-The environment was built using **OpenAI Gym Retro**.
+The original project was extended with significant architectural changes.
 
-Several key modifications were introduced to improve training stability:
+### 1. Custom Environment Reset Logic
 
-### 1. Custom Reset Logic
-Health values and match states were preserved across rounds to avoid information loss during environment resets.
+Modified reset behavior to preserve remaining health across rounds, preventing information loss between episodes.
 
-### 2. Vectorized Environments
-Replaced `DummyVecEnv` with `SubprocVecEnv` to enable multiprocessing-based parallel rollout collection, significantly improving throughput.
+This improved reward consistency and reduced instability during match transitions.
 
-### 3. Modularized Game Logic
-Refactored long conditional blocks into modular reward and event-handling functions for better maintainability and extensibility.
+### 2. Reward System Redesign
+
+The original implementation relied primarily on score signals.
+
+I redesigned the reward to incorporate:
+
+- Damage dealt / received
+- Match wins and losses
+- Combo execution
+- Special move incentives
+- Inactivity penalties
+- Combo counter constraints to avoid exploitation
+
+Reward shaping was iteratively tuned based on convergence diagnostics.
+
+### 3. Code Refactoring
+
+- Split long if-elif logic into modular reward/event handlers
+- Improved readability and maintainability
+- Added guard logic for corner cases
+
+This allowed faster iteration during experimentation.
 
 ---
 
-# Reward Function Design
+# Parallelization & Training Efficiency
 
-A naive reward based only on score signals was insufficient.
+### Vectorized Environment Upgrade
 
-A domain-informed reward function was designed incorporating:
+Replaced `DummyVecEnv` with `SubprocVecEnv` to enable multiprocessing-based rollout collection.
 
-- Damage dealt to opponent  
-- Damage received  
-- Match win/loss bonus  
-- Combo execution reward  
-- Special move incentives  
-- Penalties for inactivity or failed execution  
+This significantly improved training throughput for computationally heavy pixel-based environments.
 
-This significantly improved learning efficiency and policy quality.
+### Hyperparameter Search Decision
 
-The reward shaping process was iterative and adjusted based on training dynamics.
+Initial hyperparameter tuning required ~19 hours for 100 trials.
+
+To accelerate development cycles, I removed exhaustive search and focused on stable default configurations.
+
+This reduced iteration latency and improved experimental efficiency.
+
+### Observation Optimization
+
+- Grayscale preprocessing
+- Frame skipping
+- Reduced input size to (84,84,1)
+
+Overall training speed improved by ~30%.
 
 ---
 
 # PPO vs Recurrent PPO
 
-Two algorithms were evaluated:
+Recurrent PPO (LSTM):
 
-## PPO
-
-- Feed-forward policy network  
-- Stable clipping objective  
-- Strong baseline performance  
-
-## Recurrent PPO (LSTM-based)
-
-Street Fighter contains partial observability and temporal dependencies.  
-
-To address this, LSTM layers were introduced to capture:
-
-- Sequential attack patterns  
-- Combo timing dependencies  
-- Opponent behavioral cycles  
-
-Recurrent PPO demonstrated improved stability in higher difficulty settings.
+- Modeled temporal dependencies
+- Captured combo timing and opponent behavior cycles
+- Improved consistency under higher difficulty settings
 
 ---
+<iframe width="100%" height="450"
+        src="https://www.youtube.com/embed/6MxL7OmCIMM"
+        frameborder="0"
+        allowfullscreen>
+</iframe>
+# Performance
 
-# Demo
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item"
-          src="https://www.youtube.com/embed/6MxL7OmCIMM"
-          allowfullscreen></iframe>
-</div>
-
----
-
-# Performance Results
-
-The final PPO agent achieved:
-
-- **96% win rate** against built-in AI
-- Stable convergence across multiple runs
+- 96% win rate over 100 evaluation matches
+- Stable convergence across runs
 - Competitive performance at elevated game difficulty
-
-Recurrent PPO showed stronger consistency in longer matches and higher-level AI settings.
-
----
-
-# Training Efficiency Improvements
-
-To accelerate training:
-
-- Grayscale encoding reduced input dimensionality
-- Frame skipping reduced redundant transitions
-- Hyperparameter search was simplified to reduce iteration latency
-- Vectorized environment parallelism improved sample throughput
-
-These optimizations yielded approximately **30% improvement in training efficiency**.
-
----
-
-# Technical Stack
-
-- Python
-- PyTorch
-- Stable-Baselines3
-- Gym Retro
-- SubprocVecEnv
-- LSTM-based policy networks
-
----
-
-# Recognition
-
-Awarded **Best Final Year Project**  
-(top-ranked project in the department)  
-University of Macau, 2023.
-
----
-
-# Broader Impact
-
-This project demonstrates that:
-
-- Careful reward design is critical in complex environments
-- Memory mechanisms (LSTM) matter in partially observable games
-- Engineering decisions (parallel environments, reset logic) directly affect RL performance
-
-It laid the foundation for my subsequent research in reinforcement learning for robotics and control.
