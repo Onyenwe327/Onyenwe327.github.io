@@ -7,7 +7,6 @@ importance: 1
 category: research
 related_publications: false
 ---
-
 Developed RL agents for Street Fighter II using **PPO** 
 and **LSTM-PPO** via OpenAI Gym Retro.
 
@@ -23,4 +22,3 @@ at University of Macau.
 
 **Tools:** PyTorch, Gym Retro, Stable-Baselines3
 
-{% endraw %}
