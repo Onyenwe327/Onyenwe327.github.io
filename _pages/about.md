@@ -32,5 +32,6 @@ My research focuses on applying RL to robotic locomotion and game AI. I have exp
 
 I am broadly interested in deep RL, reward shaping, curriculum learning, and the intersection of game AI and robotics.
 
-All models are wrong, but some are useful.
-— George Box
+> All models are wrong, but some are useful.
+>
+> — George Box
