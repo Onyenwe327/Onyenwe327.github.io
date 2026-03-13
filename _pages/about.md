@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Master's student in Computer Engineering at the University of Southern California (USC), specializing in **reinforcement learning** and robot learning. 
+I am a Master's graduate in Computer Engineering at the University of Southern California (USC), specializing in **reinforcement learning** and robot learning. 
 
 My research focuses on applying RL to robotic locomotion and game AI. I have experience with PPO-based agent training in MuJoCo environments, and have developed game-playing agents achieving 96% win rate in Street Fighter II using RL. 
 

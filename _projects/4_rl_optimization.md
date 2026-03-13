@@ -127,7 +127,7 @@ We used three simulation backends at different stages:
   <video width="100%" controls autoplay muted loop class="rounded z-depth-1">
     <source src="/assets/video/render_L0.400.mp4" type="video/mp4">
   </video>
-  <p class="caption mt-2">Best morphology found by GA outer-loop: link length = 0.4m, trained with PPO inner-loop.</p>
+  <p class="caption mt-2">A morphology found by GA outer-loop: link length = 0.4m, trained with PPO inner-loop.</p>
 </div>
 
 ---
@@ -136,9 +136,8 @@ We used three simulation backends at different stages:
 
 - **DOF matters non-linearly**: 2–3 DOF legs outperform both 1-DOF (too rigid) and 4-DOF (too hard to control)
 - **Link length interacts with DOF**: optimal length decreases as DOF increases
-- **Bayesian optimization is most sample-efficient** for continuous parameters
+- **Bayesian optimization is sample-efficient** for continuous parameters
 - **GA finds diverse high-performing solutions** across the fitness landscape
-- **Brax pre-screening** reduces total compute by filtering low-fitness candidates before MuJoCo evaluation
 
 ---
 

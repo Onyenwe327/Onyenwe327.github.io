@@ -83,6 +83,16 @@ Recurrent PPO demonstrated improved stability in higher difficulty settings.
 
 ---
 
+# Demo
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item"
+          src="https://www.youtube.com/embed/6MxL7OmCIMM"
+          allowfullscreen></iframe>
+</div>
+
+---
+
 # Performance Results
 
 The final PPO agent achieved:
