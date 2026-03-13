@@ -1,10 +1,10 @@
 cv:
   name: Jiajin Zhang
   label: Reinforcement Learning Researcher
-  email: jiajinz@usc.edu
+  email: jiajinzh@usc.edu
   location: Los Angeles, CA
   image: ""
-  summary: Reinforcement learning researcher working on robotic locomotion, morphology-control co-optimization, and scalable training systems
+  summary: Reinforcement learning researcher specializing in robotic locomotion, morphology-control co-optimization, and game AI. MS in Computer Engineering from USC.
 
   social_networks:
     - network: GitHub
@@ -13,10 +13,10 @@ cv:
       username: jiajinzhang
 
   address:
-    street: ""
+    street: Los Angeles
     city: Los Angeles
     region: California
-    postalCode: ""
+    postalCode: "90007"
     countryCode: US
 
   sections:
@@ -26,113 +26,128 @@ cv:
         url: https://www.usc.edu/
         area: Computer Engineering
         studyType: Master of Science
-        start_date: 2024-08
-        end_date: 2025-05
+        start_date: 2024-01
+        end_date: 2025-12
         score: ""
-        courses: "Machine Learning I; Parallel and Distributed Computation; Probability for ECE"
+        courses: "Machine Learning; Parallel and Distributed Computation; Probability for ECE"
         highlights:
-          - Coursework in machine learning and distributed systems.
+          - Specialization in reinforcement learning and robot learning.
 
       - institution: University of Macau
         location: Macau, China
         url: https://www.um.edu.mo/
         area: Computer Science
         studyType: Bachelor of Science
-        start_date: 2019-09
+        start_date: 2019-08
         end_date: 2023-06
         highlights:
-          - Outstanding Graduate Student
-          - Best Final Year Project (Reinforcement Learning in Games)
+          - Outstanding Graduate Student Award.
+          - Best Final Year Project (Reinforcement Learning in Games, top 1 of department).
 
     Experience:
-      - company: Dynamic Robotics and Control Laboratory (DRCL), USC
+      - company: Dynamic Robotics and Control Laboratory, USC
         position: Research Assistant
         location: Los Angeles, CA
         start_date: 2025-09
-        end_date: null
-        summary: Research on reinforcement learning for robotic control and morphology co-design under Dr. Nguyen.
+        end_date: 2025-12
+        summary: Research on RL-based robotic control and morphology co-design.
         highlights:
-          - Designed nested optimization for morphology-controller co-design.
-          - Automated MuJoCo parametric morphology generation.
-          - Built co-evolution pipeline for controller and mechanics.
+          - Formulated nested optimization framework integrating inner-loop RL with outer-loop black-box optimization (GA, PSO) for morphology co-design.
+          - Automated parametric morphology generation in MuJoCo using mj-spec.
+          - Built co-evolution pipeline to jointly optimize morphology-controller pairs.
 
       - company: Valero Lab, USC
         position: Research Assistant Intern
         location: Los Angeles, CA
         start_date: 2024-08
-        end_date: 2025-05
-        summary: Intern work on tendon elasticity and RL experiments.
+        end_date: 2025-08
+        summary: Studied how tendon elasticity modulates RL performance in overdetermined tendon-driven robotic limbs.
         highlights:
-          - Conducted large-scale PPO experiments.
-          - Implemented MuJoCo evaluation pipelines.
+          - Conducted large-scale PPO training at 40 Hz with 20+ replicates.
+          - Quantified inter-joint coordination via DTW, ellipse area, and occupancy entropy.
+          - Demonstrated adaptive tendon stiffness accelerates convergence and yields smoother gait.
 
       - company: Boardware Software Inc.
         position: Software Engineer Intern
         location: Macau, China
         start_date: 2022-06
         end_date: 2022-08
-        summary: Software engineering internship.
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March.
-        highlights:
-          - Awarded 'Climate Hero' award by Greenpeace.
+        summary: Software engineering internship focusing on backend development.
 
     Awards:
       - title: Best Final Year Project
         authors:
-          - University of Macau
+          - University of Macau Department of Computer Science
         date: 2023-06-01
         awarder: University of Macau
-        summary: Top project award for undergraduate thesis on reinforcement learning in games.
+        url: https://www.um.edu.mo/
+        summary: Awarded top undergraduate project for RL agent achieving 96% win rate in Street Fighter II.
 
     Publications:
-      - title: Learning and Performance Trade-offs Across Tendon Stiffness Levels in a Simulated Robotic Limb
+      - title: "Learning and Performance Trade-offs Across Tendon Stiffness Levels in a Simulated Robotic Limb"
         authors:
           - Jiajin Zhang
-        publisher: Society for Neuroscience
-        releaseDate: 2025-08-01
-        url: ""
-        summary: Submitted abstract on tendon stiffness and learning tradeoffs.
+          - R. Mir
+          - F. J. Valero-Cuevas
+        publisher: Society for Neuroscience (SfN)
+        releaseDate: 2025-10-01
+        url: https://www.sfn.org/
+        summary: Investigated how varying tendon stiffness schedules affect RL convergence speed and locomotion stability in a simulated 2-joint robotic limb.
 
-      - title: Learning Locomotion Under Frustrated Constraints
+      - title: "Learning Locomotion Under Frustrated Constraints: The Impact of Tendon Stiffness"
         authors:
+          - R. Mir
           - Jiajin Zhang
+          - F. J. Valero-Cuevas
         publisher: Salk Motor Systems Symposium
         releaseDate: 2025-07-01
-        url: ""
-        summary: Submitted abstract.
+        url: https://www.salk.edu/
+        summary: Presented findings on adaptive stiffness schedules and their impact on robotic locomotion learning dynamics.
 
     Projects:
-      - name: Street Fighter RL Agent
-        start_date: 2022-01-01
-        end_date: 2023-06-01
-        summary: PPO and LSTM-PPO agents achieving 96% win rate in Gym Retro.
+      - name: Street Fighter II RL Agent
+        start_date: 2022-08-01
+        end_date: 2023-05-01
+        summary: Developed PPO and LSTM-PPO agents for Street Fighter II via OpenAI Gym Retro, achieving 96% win rate. Improved training efficiency 30% via grayscale encoding and frame skipping. Awarded Best Final Year Project.
+        highlights:
+          - 96% win rate against built-in AI using PPO.
+          - 30% efficiency improvement via grayscale encoding and frame skipping.
 
       - name: Parallelized Q-Learning and DQN
-        start_date: 2023-09-01
-        end_date: 2024-01-01
-        summary: 3x training speedup via parallel sampling and optimized replay buffers.
+        start_date: 2024-10-01
+        end_date: 2024-12-01
+        summary: Implemented parallel Q-learning and DQN in C++ and Python achieving 3x training speedup. Benchmarked lock-free, lock-based, and CUDA-accelerated replay buffers, reducing latency by 58%.
+        highlights:
+          - 3x training speedup via concurrent environment sampling.
+          - 58% latency reduction with CUDA-accelerated replay buffer.
 
     Skills:
       - name: Programming
-        keywords: Python, C++, CUDA
-      - name: ML / RL
-        keywords: PyTorch, Stable-Baselines3, PPO, DQN
+        level: Expert
+        icon: fa-solid fa-code
+        keywords: "Python, C++, CUDA, SwiftUI"
+
+      - name: ML / RL Frameworks
+        level: Expert
+        icon: fa-solid fa-brain
+        keywords: "PyTorch, Stable-Baselines3, TensorFlow, scikit-learn"
+
       - name: Simulation
-        keywords: MuJoCo, Gymnasium, IsaacLab
+        level: Expert
+        icon: fa-solid fa-robot
+        keywords: "MuJoCo, Gymnasium, mj-spec"
+
       - name: Systems
-        keywords: Linux, Docker, SLURM, Git
+        level: Intermediate
+        icon: fa-solid fa-server
+        keywords: "Linux, SLURM, Docker, CUDA, Git, TensorBoard"
 
     Languages:
       - name: English
-        summary: Fluent
+        summary: "Fluent"
+
       - name: Mandarin
-        summary: Native
+        summary: "Native speaker"
+
       - name: Cantonese
-        summary: Basic
+        summary: "Basic"
