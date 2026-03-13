@@ -3,7 +3,7 @@ cv:
   label: Reinforcement Learning Researcher
   email: jiajinz@usc.edu
   location: Los Angeles, CA
-  summary: Reinforcement learning researcher working on robotic locomotion, morphology–control co-optimization, and scalable training systems.
+  summary: Reinforcement learning researcher working on robotic locomotion and morphology–control co-optimization.
 
   social_networks:
     - network: GitHub
@@ -13,82 +13,89 @@ cv:
 
   sections:
 
-    Education:
+    education:
       - institution: University of Southern California
         location: Los Angeles, CA
         area: Computer Engineering
-        studyType: Master of Science
-        start_date: 2024
-        end_date: 2025
+        study_type: Master of Science
+        start_date: 2024-01
+        end_date: 2025-12
         highlights:
-          - Coursework: Machine Learning I, Parallel and Distributed Computation, Probability for ECE
+          - Machine Learning I
+          - Parallel and Distributed Computation
+          - Probability for ECE
 
       - institution: University of Macau
         location: Macau, China
         area: Computer Science
-        studyType: Bachelor of Science
-        start_date: 2019
-        end_date: 2023
+        study_type: Bachelor of Science
+        start_date: 2019-08
+        end_date: 2023-06
         highlights:
           - Outstanding Graduate Student
-          - Best Final Year Project (Reinforcement Learning in Games)
+          - Best Final Year Project
 
-    Experience:
+    experience:
       - company: Dynamic Robotics and Control Laboratory (DRCL), USC
         position: Research Assistant
         location: Los Angeles, CA
-        start_date: 2025
-        end_date: Present
+        start_date: 2025-09
+        end_date: null
         highlights:
-          - Designed a nested optimization framework integrating reinforcement learning control with genetic algorithms for robotic morphology co-design.
-          - Automated parametric morphology generation in MuJoCo for large-scale simulation experiments.
-          - Built a co-evolution pipeline to jointly optimize controller and mechanical structure.
-          - Analyzed relations between stiffness, joint count, and locomotion stability.
+          - Designed nested optimization for morphology–controller co-design.
+          - Automated MuJoCo parametric morphology generation.
+          - Built co-evolution pipeline for controller–mechanics optimization.
 
       - company: Valero Lab, USC
         position: Research Assistant Intern
         location: Los Angeles, CA
-        start_date: 2024
-        end_date: 2025
+        start_date: 2024-08
+        end_date: 2025-08
         highlights:
-          - Studied tendon elasticity effects on reinforcement learning performance in tendon-driven robotic limbs.
-          - Designed MuJoCo simulations to compare adaptive vs fixed stiffness policies.
-          - Conducted large-scale PPO experiments with statistical performance analysis.
+          - Studied tendon elasticity effects on RL performance.
+          - Conducted large-scale PPO experiments.
 
       - company: Boardware Software Inc.
         position: Software Engineer Intern
         location: Macau, China
-        start_date: 2022
-        end_date: 2022
+        start_date: 2022-06
+        end_date: 2022-08
 
-    Publications:
-      - title: (Submitted Abstract) Learning and Performance Trade-offs Across Tendon Stiffness Levels in a Simulated Robotic Limb
-        publisher: Society for Neuroscience (SfN)
-        releaseDate: 2025
-      - title: (Submitted Abstract) Learning Locomotion Under Frustrated Constraints
+    publications:
+      - title: Learning and Performance Trade-offs Across Tendon Stiffness Levels in a Simulated Robotic Limb
+        publisher: Society for Neuroscience
+        release_date: 2025
+
+      - title: Learning Locomotion Under Frustrated Constraints
         publisher: Salk Motor Systems Symposium
-        releaseDate: 2025
+        release_date: 2025
 
-    Projects:
+    projects:
       - name: Street Fighter RL Agent
-        summary: Developed PPO and LSTM-PPO agents achieving 96% win rate in Gym Retro.
-      - name: Parallelized Q-Learning and DQN
-        summary: Achieved 3× training speedup via parallel sampling and optimized replay buffers.
+        summary: PPO and LSTM-PPO agents achieving 96% win rate.
 
-    Skills:
+      - name: Parallelized Q-Learning and DQN
+        summary: 3× training speedup via parallel sampling.
+
+    skills:
       - name: Programming
         keywords: Python, C++, CUDA
+
       - name: ML / RL
-        keywords: PyTorch, Stable-Baselines3, Reinforcement Learning, PPO, DQN
+        keywords: PyTorch, PPO, DQN, Stable-Baselines3
+
       - name: Simulation
-        keywords: MuJoCo, Gymnasium, MJlab, IsaacLab
+        keywords: MuJoCo, Gymnasium, IsaacLab
+
       - name: Systems
         keywords: Linux, Docker, SLURM, Git
 
-    Languages:
+    languages:
       - name: English
-        summary: Fluent
+        level: Fluent
+
       - name: Mandarin
-        summary: Native
+        level: Native
+
       - name: Cantonese
-        summary: Basic
+        level: Basic
