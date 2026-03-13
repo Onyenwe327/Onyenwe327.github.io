@@ -1,4 +1,11 @@
-This project builds a competitive deep RL agent for Street Fighter II using PPO and Recurrent PPO.
+---
+layout: page
+title: Reinforcement Learning in Games
+description: This project builds a competitive deep RL agent for Street Fighter II using PPO and Recurrent PPO.
+img: assets/img/maxresdefault.jpg
+importance: 1
+category: research
+---
 
 **Role:** RL Developer  
 **Foundation:** Extended and refactored an existing Gym Retro implementation  
